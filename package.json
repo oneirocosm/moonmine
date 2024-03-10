@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "watch": "tsc-watch index.ts --outDir ./dist --onSuccess \"node ./dist/index.js\""
+    "watch": "tsc-watch index.ts --outDir ./dist --onSuccess \"node ./dist/index.js\"",
+    "resetcache": "node ./dist/reset.js"
   },
   "keywords": [],
   "author": "oneirocosm",
@@ -15,5 +16,8 @@
     "@types/node": "^20.11.25",
     "tsc-watch": "^6.0.4",
     "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "mineflayer": "^4.20.0"
   }
 }
